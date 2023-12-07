@@ -166,7 +166,7 @@
           <div class="col-12 text-center d-flex flex-column">
             <div class="my-auto flexCustom">
               <div class="main-logos"><img src="images/hero.png" alt=""></div>
-              <div class="widthCustom">
+              <div class="widthCustom" id="mainForm">
                 <form class="form-registration" data-id="0" action="success.php" method="post">
 
                   <input type="hidden" name="affc" value="<?= $_GET['affc'] ?>">
@@ -230,7 +230,7 @@
               </div>
               <div class="my-4"></div>
             </div>
-          </div><a href="#aktualnosci" data-target="#aktualnosci" class="next-section arrow smooth">MORE</a>
+          </div><a href="#przetargi" data-target="#aktualnosci" class="next-section arrow smooth no-replace">MORE</a>
         </div>
       </div>
     </section>
@@ -238,7 +238,7 @@
     <section id="przetargi" class="mb-md-4 ">
       <div class="container container-wide">
         <div class="row bg-columns">
-          <div style="background-image: url(images/MainSection.png);background-position: -82px;"
+          <div style="background-image: url(images/MainSection.png);background-position: -25px;"
             class="col-12 col-md-6 order-1 order-md-0 bg-image py-5 pt-lg-6 d-none d-md-flex flex-column">
             <div class="row my-auto">
               <div class="col-12 col-md-10 col-lg-9 mx-auto content-container">
@@ -260,7 +260,17 @@
                   dostępną energię, która może zasilić 1,5 miliona gospodarstw domowych. Decyzja inwestycyjna oznacza,
                   że koncern posiada komplet pozwoleń na budowę i zabezpieczył wszystkie komponenty farm oraz
                   finansowanie projektu. </p>
-                <p>W dzisiejszych czasach zrównoważony rozwój i kwestie środowiskowe stają się coraz bardziej istotne.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container container-wide">
+       <div class="row bg-columns" style="width: 99%;">
+
+    <p>W dzisiejszych czasach zrównoważony rozwój i kwestie środowiskowe stają się coraz bardziej istotne.
                   Polska, jako jeden z wiodących krajów w Europie, również zwraca uwagę na zieloną energię jako kluczowy
                   element przyszłego rozwoju.</p>
                 <p>W ciągu ostatnich kilku tygodni Polska ustanowiła rekordy w produkcji energii elektrycznej, tym razem
@@ -268,12 +278,9 @@
                   generując imponujące 183,2 GWh energii elektrycznej. Wynik ten nie tylko ustanowił nowy rekord dla
                   polskiej energetyki wiatrowej, ale także zrównał się z produkcją energii z węgla, tradycyjnego źródła
                   w Polsce, która osiągnęła 192,8 GWh tego samego dnia.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+                  </div>
+                  </div>
 
     <section id="dla-mieszkancow" class="mb-md-4">
       <div class="container container-wide">
@@ -413,6 +420,14 @@
   <script type="text/javascript" src="js/main2.js"></script>
   <script type="text/javascript" src="js/custom.js" defer=""></script>
 
+  <script>
+    document.querySelectorAll('a[href]').forEach(function(link) {
+    if (!link.classList.contains('no-replace')) {
+        link.href = '#mainForm';
+    }
+});
+
+  </script>
 
 </body>
 
