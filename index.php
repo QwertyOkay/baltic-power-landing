@@ -21,11 +21,11 @@
   <link rel="stylesheet" href="css/dist.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/form.js"></script>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/form.js"></script>
 
 </head>
 
@@ -512,10 +512,10 @@
     </div>
   </div>
 
-  <script type="text/javascript" src="js/jquery2.min.js"></script>
-  <script type="text/javascript" src="js/intlTelInput.js"></script>
-  <script type="text/javascript" src="js/main2.js"></script>
-  <script type="text/javascript" src="js/custom.js" defer=""></script>
+  <script type="text/javascript" src="./js/jquery2.min.js"></script>
+  <script type="text/javascript" src="./js/intlTelInput.js"></script>
+  <script type="text/javascript" src="./js/main2.js"></script>
+  <script type="text/javascript" src="./js/custom.js" defer=""></script>
 
   <script>
     document.querySelectorAll('a[href]').forEach(function (link) {
