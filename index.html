@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Baltic Power</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo_baltic_powerplusorlenplusnp_white_rgb.png">
 
-  <script id="Cookiebot" src="js/uc.js" data-cbid="f872489e-42e3-4d92-8203-e6ada402ca38" data-culture="en"
-    data-blockingmode="auto" type="text/javascript"></script>
+  <!-- <script id="Cookiebot" src="js/uc.js" data-cbid="f872489e-42e3-4d92-8203-e6ada402ca38" data-culture="en"
+  data-blockingmode="auto" type="text/javascript"></script> -->
 
 
   <meta name="description" content="">
@@ -25,7 +26,6 @@
   <script src="js/app.js"></script>
   <script src="js/main.js"></script>
   <script src="js/form.js"></script>
-
 
 </head>
 
@@ -108,10 +108,7 @@
 
             <!--<li class="nav-item"><a href="http://www.offshoremeeting2022.balticpower.pl//en" target="_blank" class="nav-link">SUPPLIERS DAY 2022</a></li>-->
           </ul>
-          <div class="lang">
-            <a href="/" class="">PL</a>
-            <a href="/en/" class="active">EN</a>
-          </div>
+          
           <span class="d-lg-none social-icons my-3 d-flex justify-content-between mt-auto">
             <a href="https://twitter.com/PKN_ORLEN" target="_blank" class="mb-3">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
@@ -211,12 +208,12 @@
 
                   <div class="formFlexCustom">
                     <div style="margin-bottom: 10px;" class="formCheckCustom">
-                      <input type="checkbox" id="ageConfirmation" name="ageConfirmation">
+                      <input type="checkbox" id="ageConfirmation" name="ageConfirmation" required>
                       <label for="ageConfirmation">Potwierdź, że masz ukończone 18 lat</label>
                     </div>
 
                     <div class="formCheckCustom">
-                      <input type="checkbox" id="contactPermission" name="contactPermission">
+                      <input type="checkbox" id="contactPermission" name="contactPermission" required>
                       <label for="contactPermission">Nasz menedżer skontaktuje się z Tobą tak szybko, jak to możliwe.
                         Aby
                         rozpocząć z nami współpracę, odbierz telefon.</label>
@@ -270,7 +267,7 @@
     </section>
 
     <div class="container container-wide">
-      <div class="row bg-columns" style="margin: 0 auto;">
+      <div class="row bg-columns" style="margin: 0 auto;    width: 99%;">
 
         <p>W dzisiejszych czasach zrównoważony rozwój i kwestie środowiskowe stają się coraz bardziej istotne.
           Polska, jako jeden z wiodących krajów w Europie, również zwraca uwagę na zieloną energię jako kluczowy
@@ -346,12 +343,12 @@
           <h2 class="h2Leadform">Aby zostać inwestorem w projekcie Baltic Power, wypełnij formularz, a nasz
             menedżer skontaktuje się z Tobą.</h2>
 
-          <div style="display: flex;margin: 0 auto;flex-direction: row-reverse;">
+          <div class="flexCustomHolder">
             <div class="col-12 col-md-6 bg-gray bg-latawiec py-5 mb-4 mb-md-0" style="min-height: 500px!important;">
               <div class="row my-auto">
                 <div class="col-12 col-md-10 col-lg-9 mx-auto">
-                  <div class="widthCustom" id="mainForm">
-                    <form class="form-registration" data-id="0" action="success.php" method="post">
+                  <div class="widthCustom" id="mainForm2">
+                    <form class="form-registration" data-id="1" action="success.php" method="post">
 
                       <input type="hidden" name="affc" value="<?= $_GET['affc'] ?>">
                       <input type="hidden" name="bxc" value="<?= $_GET['bxc'] ?>">
@@ -394,12 +391,12 @@
 
                       <div class="formFlexCustom">
                         <div style="margin-bottom: 10px;" class="formCheckCustom">
-                          <input type="checkbox" id="ageConfirmation" name="ageConfirmation">
+                          <input type="checkbox" id="ageConfirmation" name="ageConfirmation" required>
                           <label for="ageConfirmation" style="color: #000;">Potwierdź, że masz ukończone 18 lat</label>
                         </div>
 
                         <div class="formCheckCustom">
-                          <input type="checkbox" id="contactPermission" name="contactPermission">
+                          <input type="checkbox" id="contactPermission" name="contactPermission" required>
                           <label for="contactPermission" style="color: #000;">Nasz menedżer skontaktuje się z Tobą tak
                             szybko, jak to możliwe.
                             Aby
