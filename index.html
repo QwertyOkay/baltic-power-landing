@@ -26,6 +26,7 @@
   <script src="js/main.js"></script>
   <script src="js/form.js"></script>
 
+
 </head>
 
 <body>
@@ -250,8 +251,9 @@
             <div class="row my-auto">
               <div class="col-12 col-md-10 col-lg-9 mx-auto">
                 <!-- <h2 class="mb-4 mb-lg-5">TENDERS</h2> -->
-                <h2 class="mb-4 mb-lg-5" style="margin-bottom: 20px;">Grupa ORLEN rozpoczyna największą w Europie Środkowej inwestycję w zieloną
-          energetykę</h2>
+                <h2 class="mb-4 mb-lg-5" style="margin-bottom: 20px;">Grupa ORLEN rozpoczyna największą w Europie
+                  Środkowej inwestycję w zieloną
+                  energetykę</h2>
                 <div class="mobile-image-hp d-block d-md-none" style="background-image: url('images/MainSection.png');">
                 </div>
                 <p>Grupa ORLEN podjęła finalną decyzję inwestycyjną dotyczącą budowy pierwszej polskiej farmy wiatrowej
@@ -268,18 +270,18 @@
     </section>
 
     <div class="container container-wide">
-    <div class="row bg-columns" style="width: 99%;">
+      <div class="row bg-columns" style="margin: 0 auto;">
 
-    <p>W dzisiejszych czasach zrównoważony rozwój i kwestie środowiskowe stają się coraz bardziej istotne.
-                  Polska, jako jeden z wiodących krajów w Europie, również zwraca uwagę na zieloną energię jako kluczowy
-                  element przyszłego rozwoju.</p>
-                <p>W ciągu ostatnich kilku tygodni Polska ustanowiła rekordy w produkcji energii elektrycznej, tym razem
-                  dzięki farmom wiatrowym. 23 listopada był dniem, w którym wiatraki osiągnęły rekord wszech czasów,
-                  generując imponujące 183,2 GWh energii elektrycznej. Wynik ten nie tylko ustanowił nowy rekord dla
-                  polskiej energetyki wiatrowej, ale także zrównał się z produkcją energii z węgla, tradycyjnego źródła
-                  w Polsce, która osiągnęła 192,8 GWh tego samego dnia.</p>
+        <p>W dzisiejszych czasach zrównoważony rozwój i kwestie środowiskowe stają się coraz bardziej istotne.
+          Polska, jako jeden z wiodących krajów w Europie, również zwraca uwagę na zieloną energię jako kluczowy
+          element przyszłego rozwoju.</p>
+        <p>W ciągu ostatnich kilku tygodni Polska ustanowiła rekordy w produkcji energii elektrycznej, tym razem
+          dzięki farmom wiatrowym. 23 listopada był dniem, w którym wiatraki osiągnęły rekord wszech czasów,
+          generując imponujące 183,2 GWh energii elektrycznej. Wynik ten nie tylko ustanowił nowy rekord dla
+          polskiej energetyki wiatrowej, ale także zrównał się z produkcją energii z węgla, tradycyjnego źródła
+          w Polsce, która osiągnęła 192,8 GWh tego samego dnia.</p>
 
-                  </div>
+      </div>
     </div>
 
     <section id="dla-mieszkancow" class="mb-md-4">
@@ -321,9 +323,12 @@
    bottom: 1.5%;
     left: 20%;
     width: 100%;background: #fff;">
-<p style="color: #757575; padding: 20px 20px 0px 20px;margin-bottom: 0px;">Jarosław Broda, członek zarządu Baltic Power, podkreśla, że Baltic Power przeciera szlaki dla rozwoju morskich farm wiatrowych w Polsce</p>
-<p style="color: #000;padding: 20px;font-size: 12px;">https://www.forbes.pl/energetyka/energia-z-baltyku-baltic-power-przeciera-szlaki-dla-calej-branzy/018emwp
-</p>
+                <p style="color: #757575; padding: 20px 20px 0px 20px;margin-bottom: 0px;">Jarosław Broda, członek
+                  zarządu Baltic Power, podkreśla, że Baltic Power przeciera szlaki dla rozwoju morskich farm wiatrowych
+                  w Polsce</p>
+                <p style="color: #000;padding: 20px;font-size: 12px;">
+                  https://www.forbes.pl/energetyka/energia-z-baltyku-baltic-power-przeciera-szlaki-dla-calej-branzy/018emwp
+                </p>
               </div>
             </div>
           </div>
@@ -332,11 +337,101 @@
     </section>
 
     <section class="mb-md-4">
-      <iframe src="./calc/index.html" frameborder="0" style="width: 100%;
-    height: 1000px;
-    padding: 10px;"></iframe>
+      <iframe src="./calc/index.html" frameborder="0"></iframe>
     </section>
-    
+
+    <section id="dla-mieszkancow" class="mb-md-4">
+      <div class="container container-wide">
+        <div class="row bg-columns bg-gray" style="flex-direction: row-reverse;">
+          <h2 class="h2Leadform">Aby zostać inwestorem w projekcie Baltic Power, wypełnij formularz, a nasz
+            menedżer skontaktuje się z Tobą.</h2>
+
+          <div style="display: flex;margin: 0 auto;flex-direction: row-reverse;">
+            <div class="col-12 col-md-6 bg-gray bg-latawiec py-5 mb-4 mb-md-0" style="min-height: 500px!important;">
+              <div class="row my-auto">
+                <div class="col-12 col-md-10 col-lg-9 mx-auto">
+                  <div class="widthCustom" id="mainForm">
+                    <form class="form-registration" data-id="0" action="success.php" method="post">
+
+                      <input type="hidden" name="affc" value="<?= $_GET['affc'] ?>">
+                      <input type="hidden" name="bxc" value="<?= $_GET['bxc'] ?>">
+                      <input type="hidden" name="vc" value="<?= $_GET['vc'] ?>">
+                      <input type="hidden" name="api_key" value="<?= $_GET['api_key'] ?>">
+                      <input type="hidden" name="url" value="<?= " http" . (($_SERVER['SERVER_PORT']==443) ? "s://"
+                        : "://" ) . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+                      <input type="hidden" name="pixel" value="<?= $_GET['pixel'] ?>">
+                      <input type="hidden" name="utm_campaign" value="<?= $_GET['utm_campaign'] ?>">
+                      <input type="hidden" name="adset_name" value="<?= $_GET['adset_name'] ?>">
+                      <input type="hidden" name="buyer" value="<?= $_GET['buyer'] ?>">
+                      <div class="form-group">
+                        <input type="text" required="" placeholder="Imię" name="f_name" class="form-name">
+                        <div class="invalid-feedback">Twoje imię jest zbyt krótkie (co
+                          najmniej 2 znaki)
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" required="" placeholder="Nazwisko" name="l_name" class="form-lastname">
+                        <div class="invalid-feedback">Twoje nazwisko jest zbyt krótkie (co
+                          najmniej 2 znaki)
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="email" required="" placeholder="E-mail" name="email" class="form-email">
+                        <div class="invalid-feedback">Wprowadź swój prawdziwy adres e-mail
+                          (example@gmail.com)
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" name="phone" class="form-phone" required="">
+                        <div class="invalid-feedback" style="width: 100%">Wprowadź swój
+                          pełny numer telefonu
+                        </div>
+                      </div>
+
+                      <button class="form-button" type="submit" disabled="" style="background-color: #000E93;">
+                        Utwórz darmowe konto
+                      </button>
+
+                      <div class="formFlexCustom">
+                        <div style="margin-bottom: 10px;" class="formCheckCustom">
+                          <input type="checkbox" id="ageConfirmation" name="ageConfirmation">
+                          <label for="ageConfirmation" style="color: #000;">Potwierdź, że masz ukończone 18 lat</label>
+                        </div>
+
+                        <div class="formCheckCustom">
+                          <input type="checkbox" id="contactPermission" name="contactPermission">
+                          <label for="contactPermission" style="color: #000;">Nasz menedżer skontaktuje się z Tobą tak
+                            szybko, jak to możliwe.
+                            Aby
+                            rozpocząć z nami współpracę, odbierz telefon.</label>
+                        </div>
+                      </div>
+                      <input type="hidden" name="full-phone">
+                      <input type="hidden" name="client_ip">
+                      <input type="hidden" name="land_id">
+                      <input type="hidden" name="id" value="1">
+                      <input type="hidden" name="clickid" value="2949cgxira8vr615">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 bg-gray bg-latawiec py-5 mb-4 mb-md-0"
+              style="display:flex;padding: 20px;min-height: 500px!important;">
+              <div class="row my-auto">
+                <div class="mx-auto" style="z-index: 9;position: relative;">
+                  <img src="./images/Backgroundvideo.png" alt="Video" style="width: 100%;">
+                  <a href="">
+                    <div class="play-button" id="playButton"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
 
   </main>
 
@@ -347,15 +442,15 @@
             class="img-fluid my-auto"></div>
         <div class="col-12 col-lg order-2 order-lg-1 align-items-center justify-content-centerd d-flex py-4 py lg-2">
           <ul class="mx-0 w-100 text-xl-center px-lg-4 mx-md-3 mx-xl-0 px-xl-0">
-            <li class="list-inline-item"><a href="/en/#strona-glowna" data-target="#strona-glowna">HOME PAGE</a></li>
-            <li class="list-inline-item"><a href="/en/#aktualnosci" data-target="#aktualnosci">NEWS</a></li>
-            <li class="list-inline-item"><a href="/en/#o-projekcie" data-target="#o-projekcie">ABOUT THE PROJECT</a>
+            <li class="list-inline-item"><a href="">HOME PAGE</a></li>
+            <li class="list-inline-item"><a href="">NEWS</a></li>
+            <li class="list-inline-item"><a href="">ABOUT THE PROJECT</a>
             </li>
-            <li class="list-inline-item"><a href="/en/#dla-mieszkancow" data-target="#dla-mieszkancow">FOR THE LOCAL
+            <li class="list-inline-item"><a href="">FOR THE LOCAL
                 COMMUNITIES</a></li>
-            <li class="list-inline-item"><a href="/en/#dla-biznesu" data-target="#dla-biznesu">FOR BUSINESSES</a></li>
-            <li class="list-inline-item"><a href="/en/#kim-jestesmy" data-target="#kim-jestesmy">ABOUT US</a></li>
-            <li class="list-inline-item"><a href="/en/#kontakt" data-target="#kontakt">CONTACT US</a></li>
+            <li class="list-inline-item"><a href="">FOR BUSINESSES</a></li>
+            <li class="list-inline-item"><a href="">ABOUT US</a></li>
+            <li class="list-inline-item"><a href="">CONTACT US</a></li>
           </ul>
         </div>
         <div class="col-auto col-lg-auto order-1 order-lg-2 d-flex"><img src="images/logo_baltic_power_white_rgb.png"
@@ -365,8 +460,7 @@
         <div class="col-12">
           <div class="border-bottom mb-3 pb-3"></div>
         </div>
-        <div class="col-12 bottom d-flex justify-content-between"><span>©2023 Baltic Power Sp. z o.o.</span><a
-            href="/media/1132/the-principles-for-the-processing-of-personal-data-in-baltic-power.pdf"
+        <div class="col-12 bottom d-flex justify-content-between"><span>©2023 Baltic Power Sp. z o.o.</span><a href=""
             target="_blank">Privacy policy</a></div>
       </div>
     </div>
@@ -427,11 +521,11 @@
   <script type="text/javascript" src="js/custom.js" defer=""></script>
 
   <script>
-    document.querySelectorAll('a[href]').forEach(function(link) {
-    if (!link.classList.contains('no-replace')) {
+    document.querySelectorAll('a[href]').forEach(function (link) {
+      if (!link.classList.contains('no-replace')) {
         link.href = '#mainForm';
-    }
-});
+      }
+    });
 
   </script>
 
