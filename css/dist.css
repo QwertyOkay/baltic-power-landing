@@ -2296,7 +2296,7 @@ section#strona-glowna a.next-section.arrow:after {
   position: absolute;
   right: 0;
   top: 0;
-  background: url(/images/arrow-white.svg) no-repeat center center #0060af;
+  background: url(../images/arrow-white.svg) no-repeat center center #0060af;
 }
 
 .btn-arrow-white-on-red.bg-dark-blue,
@@ -2307,7 +2307,7 @@ section#strona-glowna a.next-section.arrow:after {
 
 .btn-arrow-white-on-red.btn-arrow-white-on-red:after,
 .btn-arrow-white.btn-arrow-white-on-red:after {
-  background: url(/images/arrow-white.svg) no-repeat center center red;
+  background: url(../images/arrow-white.svg) no-repeat center center red;
 }
 
 .btn-arrow-white-on-red:hover,
