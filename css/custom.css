@@ -1042,3 +1042,7 @@ iframe {
     flex-direction: row-reverse;
   }
 }
+
+.bgCustom {
+  background-image: url("../images/kalk.jpeg") !important;
+}
