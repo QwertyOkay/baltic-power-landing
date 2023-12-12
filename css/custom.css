@@ -142,6 +142,10 @@ body {
   scroll-behavior: smooth !important;
 }
 
+html {
+  scroll-behavior: smooth !important;
+}
+
 .wp-site-blocks > .alignleft {
   float: left;
   margin-right: 2em;
