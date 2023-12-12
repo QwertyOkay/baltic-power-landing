@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900&amp;display=swap&amp;subset=latin-ext"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/intlTelInput.css">
+  <!-- <link rel="stylesheet" href="./css/intlTelInput.css"> -->
   <link rel="stylesheet" href="./css/custom.css">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/dist.css">
@@ -20,7 +20,7 @@
   <script src="./js/bootstrap.bundle.min.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/global.js"></script>
-  <script src="./js/form.js"></script>
+  <!-- <script src="./js/form.js"></script> -->
 
 </head>
 
@@ -158,7 +158,7 @@
         <div class="row h-100">
           <div class="col-12 text-center d-flex flex-column">
             <div class="my-auto flexCustom">
-              <div class="main-logos"><img src="images/hero.png" alt=""></div>
+              <div class="main-logos"><img src="images/hero.png" alt="Logos" class="customHeight"></div>
               <div class="widthCustom" id="mainForm">
                 <form class="form-registration" data-id="0" action="success.php" method="post">
 
@@ -197,7 +197,7 @@
                     </div>
                   </div>
 
-                  <button class="form-button" type="submit" disabled="" style="background-color: #000E93;">
+                  <button class="form-button" type="submit" style="background-color: #000E93;">
                     Utwórz darmowe konto
                   </button>
 
@@ -347,10 +347,8 @@
           <div style="background-image: url(images/MainSection2.png);background-position: right;"
             class="col-12 col-md-6 bg-image py-5 pt-lg-6 d-none d-md-flex flex-column">
             <div class="row my-auto">
-              <div class="col-12 col-md-10 col-lg-9 mx-auto content-container" style="position: absolute;
-   bottom: 1.5%;
-    left: 20%;
-    width: 100%;background: #fff;">
+              <div class="col-12 col-md-10 col-lg-9 mx-auto content-container" style="position: absolute;bottom: 1.5%;
+              left: 20%; width: 100%;background: #fff;">
                 <p style="color: #757575; padding: 20px 20px 0px 20px;margin-bottom: 0px;">Jarosław Broda, członek
                   zarządu Baltic Power, podkreśla, że Baltic Power przeciera szlaki dla rozwoju morskich farm wiatrowych
                   w Polsce</p>
@@ -446,9 +444,12 @@
             <div class="row my-auto">
               <div class="col-12 col-md-10 col-lg-9 mx-auto">
                 <h2 class="mb-4 mb-lg-5">Co musisz teraz zrobić, aby zacząć zarabiać na BALTIC Power?</h2>
-                <div class="mobile-image-hp d-block d-md-none" style="background-image: url('images/o_projekcie.jpeg');">
+                <div class="mobile-image-hp d-block d-md-none"
+                  style="background-image: url('images/o_projekcie.jpeg');">
                 </div>
-                <p>Zarejestruj się na tej stronie w powyższym formularzu Poczekaj na telefon od eksperta finansowego i potwierdź rejestrację Wpłać na swoje konto odpowiednią kwotę inwestycji, a wieczorem tego dnia otrzymasz pierwszy zysk</p>
+                <p>Zarejestruj się na tej stronie w powyższym formularzu Poczekaj na telefon od eksperta finansowego i
+                  potwierdź rejestrację Wpłać na swoje konto odpowiednią kwotę inwestycji, a wieczorem tego dnia
+                  otrzymasz pierwszy zysk</p>
                 <p><a href="" title="ABOUT THE PROJECT" class="my-4 btn-arrow-white bg-white">MORE INFORMATION</a></p>
               </div>
             </div>
@@ -505,7 +506,7 @@
                         </div>
                       </div>
 
-                      <button class="form-button" type="submit" disabled="" style="background-color: #000E93;">
+                      <button class="form-button" type="submit" style="background-color: #000E93;">
                         Utwórz darmowe konto
                       </button>
 
@@ -534,58 +535,47 @@
               </div>
             </div>
 
-            <!-- <div class="col-12 col-md-6 bg-gray bg-latawiec py-5 mb-4 mb-md-0"
+            <div class="col-12 col-md-6 bg-gray bg-latawiec py-5 mb-4 mb-md-0"
               style="display:flex;padding: 20px;min-height: 500px!important;">
               <div class="row my-auto">
                 <div class="mx-auto" style="z-index: 9;position: relative;">
-                  <img src="./images/Backgroundvideo.png" alt="Video" style="width: 100%;">
-                  <a href="">
-                    <div class="play-button" id="playButton"></div>
+                  <video id="myVideo" style="width: 100%; display: none;" controls preload="none">
+                    <source src="./images/ORLEN2030.mp4" type="video/mp4">
+                    ERROR
+                  </video>
+                  <img src="./images/Backgroundvideo.png" alt="Video" style="width: 100%;" id="videoCover">
+                  <a href="#" onclick="playVideo(); return false;" class="no-replace">
+                    <div class="play-button" id="playButton">
+                    </div>
                   </a>
                 </div>
               </div>
-            </div> -->
+            </div>
 
-            <div class="col-12 col-md-6 bg-gray bg-latawiec py-5 mb-4 mb-md-0" style="display:flex;padding: 20px;min-height: 500px!important;">
-  <div class="row my-auto">
-    <div class="mx-auto" style="z-index: 9;position: relative;">
-      <video id="myVideo" style="width: 100%; display: none;" controls preload="none">
-        <source src="./images/ORLEN2030.mp4" type="video/mp4">
-        ERROR
-      </video>
-      <img src="./images/Backgroundvideo.png" alt="Video" style="width: 100%;" id="videoCover">
-      <a href="#" onclick="playVideo(); return false;" class="no-replace">
-        <div class="play-button" id="playButton">
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
-            
           </div>
         </div>
 
     </section>
 
     <script>
-  function playVideo() {
-    const video = document.getElementById('myVideo');
-    const cover = document.getElementById('videoCover');
-    const button = document.getElementById('playButton');
-    if (video.style.display === 'none') {
-      video.style.display = 'block';
-      cover.style.display = 'none';
-      button.style.display = 'none';
-      video.play();
-    } else {
-      video.style.display = 'none';
-      cover.style.display = 'block';
-      button.style.display = 'block';
+      function playVideo() {
+        const video = document.getElementById('myVideo');
+        const cover = document.getElementById('videoCover');
+        const button = document.getElementById('playButton');
+        if (video.style.display === 'none') {
+          video.style.display = 'block';
+          cover.style.display = 'none';
+          button.style.display = 'none';
+          video.play();
+        } else {
+          video.style.display = 'none';
+          cover.style.display = 'block';
+          button.style.display = 'block';
 
-      video.pause();
-    }
-  }
-</script>
+          video.pause();
+        }
+      }
+    </script>
 
   </main>
 
@@ -670,8 +660,8 @@
   </div>
 
   <script type="text/javascript" src="./js/jquery2.min.js"></script>
-  <script type="text/javascript" src="./js/intlTelInput/js/intlTelInput.js"></script>
-  <script type="text/javascript" src="./js/intlTelInput/js/utils.js"></script>
+  <!-- <script type="text/javascript" src="./js/intlTelInput/js/intlTelInput.js"></script>
+  <script type="text/javascript" src="./js/intlTelInput/js/utils.js"></script> -->
   <script type="text/javascript" src="./js/main.js"></script>
   <script type="text/javascript" src="./js/custom.js" defer=""></script>
 

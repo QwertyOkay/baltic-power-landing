@@ -139,6 +139,7 @@ body {
   margin: 0;
   --wp--style--global--content-size: 40rem;
   --wp--style--global--wide-size: 60rem;
+  scroll-behavior: smooth !important;
 }
 
 .wp-site-blocks > .alignleft {
@@ -966,6 +967,23 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .flexCustom {
+    flex-direction: row;
+  }
+}
+
+.customHeight {
+  height: 180px;
+}
+
+@media screen and (min-width: 1200px) {
+  .customHeight {
+    height: auto;
+  }
 }
 
 .invalid-feedback {
